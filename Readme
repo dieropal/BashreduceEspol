@@ -1,0 +1,14 @@
+Ejemplos de como ejecutar los scripts:
+
+- 1 core
+
+time ./br -h "localhost" -m"~/bashReduce/bashreduce-master/map/map.py" -r "~/bashReduce/bashreduce-master/Reduce/reduce.py" -i "9,5Mb" -o "rel-9,5Mb1"
+
+- 2 cores
+
+time ./br -h "localhost localhost" -m"~/bashReduce/bashreduce-master/map/map.py" -r "~/bashReduce/bashreduce-master/Reduce/reduce.py" -i "9,5Mb" -o "rel-9,5Mb2"
+
+- 4 cores
+
+time ./br -h "localhost localhost localhost localhost" -m"~/bashReduce/bashreduce-master/map/map.py" -r "~/bashReduce/bashreduce-master/Reduce/reduce.py" -i "9,5Mb" -o "rel-9,5Mb4"
+
